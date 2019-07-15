@@ -7,6 +7,7 @@ class AddForm extends Component {
         super(props);
         this.state = {
             task: '',
+            
 
         }
         this.submitHandler = this.submitHandler.bind(this);
@@ -22,6 +23,7 @@ class AddForm extends Component {
         this.setState(state =>{return {task:" "};});
 
     }
+    
     changeHandler(e) {
         this.setState(
             { [e.target.name]: e.target.value }
