@@ -1,0 +1,39 @@
+.todo{
+   display: flex;
+   flex-direction: row;
+   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+   border-radius: 5px;
+   margin-top: 0.5rem;
+   margin-bottom: .5rem;
+    background: #6AB187;
+    justify-content:flex-end;
+
+    span{
+        text-align: center;
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+
+    }
+       input{
+         height: 3rem;
+         width: 15rem;
+         border-radius: 10px;
+         font-family: 'Courier New', Courier, monospace;
+         font-size: 1.5rem;
+       }
+    button{
+        
+        height: 3rem;
+        width: 3rem;
+        border-radius: 5px;
+        margin-left: 1rem;
+        background:#F4CC70;
+        color:white;
+        font-weight: 700;
+        transform: 1s;
+        &:hover{
+            background-color:#DE7A22;
+        } 
+    }
+}

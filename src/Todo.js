@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Todo.scss';
 
 class Todo extends Component {
     constructor(props) {
@@ -31,18 +32,21 @@ class Todo extends Component {
     render() {
         if (!this.props.isEdit) {
             return (
-                <div>
+                <div className="todo">
                     <span>{this.props.task}</span>
+                    <div className="buttons">
                     <button onClick={this.EditHandler} >Edit</button>
                     <button name="delete" onClick={this.deleteHandler}>Delete</button>
+                    </div>
+                    
                 </div>
 
             );
         } else {
             return (
-                <div>
+                <div className="todo">
                     <form onSubmit={this.submitChange}>
-                        <label htmlFor="todo">Todo:</label>
+                        <label htmlFor="todo"></label>
                         <input name="todo" type="text" value={this.props.content} onChange={this.changeTask} />
                         <button type="submit" >Save</button>
                     </form>

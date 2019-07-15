@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Todo from './Todo';
 import uuid from 'uuid/v4';
 import AddForm from './AddForm';
+import './TodoList.scss';
 
 
 class TodoList extends Component {
@@ -66,7 +67,7 @@ class TodoList extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="todoList">
                 {this.drawList()}
                 <AddForm addTodo={this.addTodo} />
             </div>

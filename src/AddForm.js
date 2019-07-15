@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './AddForm.scss';
 
 
 
@@ -7,7 +8,7 @@ class AddForm extends Component {
         super(props);
         this.state = {
             task: '',
-            
+
 
         }
         this.submitHandler = this.submitHandler.bind(this);
@@ -20,10 +21,10 @@ class AddForm extends Component {
 
         this.props.addTodo(this.state);
 
-        this.setState(state =>{return {task:" "};});
+        this.setState(state => { return { task: " " }; });
 
     }
-    
+
     changeHandler(e) {
         this.setState(
             { [e.target.name]: e.target.value }
@@ -33,14 +34,14 @@ class AddForm extends Component {
 
     render() {
         return (
-            <div>
-                <div>
-                    <p>New Todo</p>
-                    <form onSubmit={this.submitHandler}>
-                        <input type="text" name="task" value={this.state.task} onChange={this.changeHandler} />
-                        <button type="submit" > Add Todo</button>
-                    </form>
-                </div>
+            <div className="addForm">
+
+                <p>New Todo</p>
+                <form onSubmit={this.submitHandler}>
+                    <input type="text" name="task" value={this.state.task} onChange={this.changeHandler} />
+                    <button type="submit" > Add</button>
+                </form>
+
             </div>
         );
     }

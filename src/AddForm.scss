@@ -1,0 +1,33 @@
+.addForm{
+    border-radius: 7px;
+    background-color: #DE7A22;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 2rem 1rem 2rem;
+    p{
+         color:white;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         font-weight: 600;
+         font-size: 2rem;
+    }
+    form{
+     input{
+         height: 3rem;
+         width: 15rem;
+         border-radius: 10px;
+     }
+     button{
+         height: 3rem;
+         width: 3rem;
+         border-radius: 5px;
+         margin-left: 1rem;
+         background:#6AB187;
+         color:white;
+         font-weight: 600;
+         transform: 1s;
+         &:hover{
+             background-color:#20948B;
+         }
+     }
+    }
+}
