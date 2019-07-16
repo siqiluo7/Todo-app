@@ -20,7 +20,7 @@
          width: 15rem;
          border-radius: 10px;
          font-family: 'Courier New', Courier, monospace;
-         font-size: 1.5rem;
+         font-size: 100%;
        }
     button{
         
@@ -30,7 +30,7 @@
         margin-left: 1rem;
         background:#F4CC70;
         color:white;
-        font-weight: 700;
+        font-weight: 00;
         transform: 1s;
         &:hover{
             background-color:#DE7A22;
